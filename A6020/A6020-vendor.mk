@@ -81,12 +81,14 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/A6020/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     vendor/lenovo/A6020/proprietary/vendor/firmware/wlan/prima/WCNSS_wlan_dictionary.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_wlan_dictionary.dat \
     vendor/lenovo/A6020/proprietary/vendor/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/audiosphere.xml \
+    vendor/lenovo/A6020/proprietary/etc/permissions/com.motorola.dolby.dolbyui.features.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.dolby.dolbyui.features.xml \
     vendor/lenovo/A6020/proprietary/vendor/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/lenovo/A6020/proprietary/vendor/etc/permissions/imscm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/imscm.xml \
     vendor/lenovo/A6020/proprietary/vendor/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcnvitems.xml \
     vendor/lenovo/A6020/proprietary/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml \
     vendor/lenovo/A6020/proprietary/vendor/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_permissions.xml \
     vendor/lenovo/A6020/proprietary/vendor/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/telephonyservice.xml \
+    vendor/lenovo/A6020/proprietary/etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml \
     vendor/lenovo/A6020/proprietary/vendor/framework/audiosphere.jar:$(TARGET_COPY_OUT_VENDOR)/framework/audiosphere.jar \
     vendor/lenovo/A6020/proprietary/vendor/framework/com.qti.snapdragon.sdk.display.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/lenovo/A6020/proprietary/vendor/framework/imscmlibrary.jar:$(TARGET_COPY_OUT_VENDOR)/framework/imscmlibrary.jar \
@@ -101,13 +103,17 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/A6020/proprietary/lib/libqomx_core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqomx_core.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/hw/sensors.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.msm8916.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/libprotobuf-cpp-hax.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-hax.so \
+    vendor/lenovo/A6020/proprietary/product/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.dolby.daxservice.xml \
     vendor/lenovo/A6020/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.2-service.widevine \
+    vendor/lenovo/A6020/proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@1.0-service \
     vendor/lenovo/A6020/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/lenovo/A6020/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
     vendor/lenovo/A6020/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/lenovo/A6020/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/lenovo/A6020/proprietary/vendor/etc/calmodule.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/calmodule.cfg \
+    vendor/lenovo/A6020/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/lenovo/A6020/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
+    vendor/lenovo/A6020/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@1.0-service.rc \
     vendor/lenovo/A6020/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/lenovo/A6020/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/lenovo/A6020/proprietary/vendor/lib/egl/eglsubAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglsubAndroid.so \
@@ -210,6 +216,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/A6020/proprietary/vendor/lib/libchromatix_ov13850_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_snapshot.so \
     vendor/lenovo/A6020/proprietary/vendor/lib/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneapiclient.so \
     vendor/lenovo/A6020/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
+    vendor/lenovo/A6020/proprietary/vendor/lib/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdapparamstorage.so \
     vendor/lenovo/A6020/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/lenovo/A6020/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
     vendor/lenovo/A6020/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
@@ -296,6 +303,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/A6020/proprietary/vendor/lib/libsd_sdk_display.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsd_sdk_display.so \
     vendor/lenovo/A6020/proprietary/vendor/lib/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsettings.so \
     vendor/lenovo/A6020/proprietary/vendor/lib/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmemlog.so \
+    vendor/lenovo/A6020/proprietary/vendor/lib/libstagefrightdolby.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrightdolby.so \
     vendor/lenovo/A6020/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
     vendor/lenovo/A6020/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
     vendor/lenovo/A6020/proprietary/vendor/lib/libts_detected_face_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libts_detected_face_hal.so \
@@ -309,6 +317,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/A6020/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/lenovo/A6020/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
     vendor/lenovo/A6020/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
+    vendor/lenovo/A6020/proprietary/vendor/lib/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswdap.so \
+    vendor/lenovo/A6020/proprietary/vendor/lib/vendor.dolby.hardware.dms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.dolby.hardware.dms@1.0.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/eglSubDriverAndroid.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/egl/eglsubAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/eglsubAndroid.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
@@ -374,8 +384,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/A6020/proprietary/vendor/lib64/libcalmodule_senodia.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcalmodule_senodia.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
+    vendor/lenovo/A6020/proprietary/vendor/lib64/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdapparamstorage.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
+    vendor/lenovo/A6020/proprietary/vendor/lib64/libdlbdsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbdsservice.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
@@ -443,12 +455,16 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/A6020/proprietary/vendor/lib64/libwcnss_qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwcnss_qmi.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
+    vendor/lenovo/A6020/proprietary/vendor/lib64/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswdap.so \
+    vendor/lenovo/A6020/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0-impl.so \
+    vendor/lenovo/A6020/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0.so \
     vendor/lenovo/A6020/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/lenovo/A6020/proprietary/vendor/qcril.db:$(TARGET_COPY_OUT_VENDOR)/qcril.db
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
+    MotoDolbyV3 \
     qcrilmsgtunnel \
     QtiTelephonyService \
     colorservice \
@@ -457,6 +473,7 @@ PRODUCT_PACKAGES += \
     TimeService \
     ims \
     PowerOffAlarm \
+    daxService \
     QtiTelephonyServicelibrary \
     qcnvitems \
     qcrilhook
